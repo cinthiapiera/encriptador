@@ -102,3 +102,14 @@ main{
   margin-left: 255px;
   margin-top: 530px;
 }
+
+.footer{
+  text-align: center;
+  padding: 40px;
+
+}
+.copyrigth{
+  color: #0A3871;
+  font-size: 13px;
+  margin: 20px;
+}
