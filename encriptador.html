@@ -60,17 +60,16 @@
 		pantalla(c)
 	}
 
-  function pantalla(c){
-    let resultado = document.getElementById("mostrar")
-    resultado.innerHTML=c
+	function copiar(){
+    let copia = document.getElementById("mostrar");
+    let copiatext = copia.textContent;
+    navigator.clipboard.writeText(copiatext);
   }
-
-  function copiar(){
-    let copia = document.getElementById("mostrar")
-    copia.select();
-    navigator.clipboard.writeText(copia.value);
-    alert("Copied the text: " + copia.value);
-  }
+	
+	function pantalla(c){
+		let resultado = document.getElementById("mostrar")
+		resultado.innerHTML=c
+	}
 
 	let button1 = document.querySelector("#button1")
 	button1.onclick = encriptar;
