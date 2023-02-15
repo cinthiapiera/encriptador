@@ -65,11 +65,12 @@
     resultado.innerHTML=c
   }
 
-  // function copiar(){
-  //   let copia = document.getElementById("mostrar")
-  //   copia.innerHTML=input.value
-  // }
-  
+  function copiar(){
+    let copia = document.getElementById("mostrar")
+    copia.select();
+    navigator.clipboard.writeText(copia.value);
+    alert("Copied the text: " + copia.value);
+  }
 
 	let button1 = document.querySelector("#button1")
 	button1.onclick = encriptar;
