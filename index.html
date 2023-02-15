@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="logo" src="/assests/Logo.png" alt="logo-alura" >
+      <div class="navbar">
+        <div class="logo">
+          <p>ENCRIPTADOR DE TEXTO</p>
+        </div>
+      </div>
     </header>
     <main>
       <section>
-        <textarea class="principal" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <textarea class="principal" cols="80" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         <div>
           <h6 class="informacion"><img src="assests/icons_important.png"/> Solo letras minúsculas y sin acentos</h6>
         </div>
@@ -26,7 +30,7 @@
         </div>
       </section>
       <section>
-        <textarea class="secundario" cols="20" rows="10"></textarea>
+        <textarea class="secundario" cols="35" rows="10"></textarea>
           <div>
             <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
           </div>
