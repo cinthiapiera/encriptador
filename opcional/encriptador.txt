@@ -7,7 +7,6 @@
 <button id="button2">desencriptar</button>
 <button id="copiar">copiar</button>
 
-<script>
 	var input = document.querySelector("input")
 	input.focus();
 
@@ -79,5 +78,3 @@
 
   let button3 = document.querySelector("#copiar")
 	button3.onclick = copiar;
-
-</script>
